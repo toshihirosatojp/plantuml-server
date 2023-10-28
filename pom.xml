@@ -106,10 +106,10 @@
 
       <groupId>net.sourceforge.plantuml</groupId>
       <artifactId>plantuml</artifactId>
-      <version>1.2022.1-SNAPSHOT</version>
+      <version>1.2023.13beta1</version>
       <!--<scope>provided</scope>-->
       <scope>system</scope>
-      <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/plantuml-1.2022.1-SNAPSHOT.jar</systemPath>
+      <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/plantuml-1.2023.13beta1.jar</systemPath>
 
     </dependency>
     <dependency>
