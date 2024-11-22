@@ -61,9 +61,9 @@
     <jetty.contextpath>/${wtp.contextName}</jetty.contextpath>
 
     <!-- main versions -->
-    <plantuml.version>1.2024.3</plantuml.version>
+    <plantuml.version>1.2024.8</plantuml.version>
     <!-- Please keep the jetty version identical with the docker image -->
-    <jetty.version>11.0.15</jetty.version>
+    <jetty.version>11.0.18</jetty.version>
     <!--
       While changing the version, please update the versions in the following files as well:
       - src/main/webapp/components/app-head.jsp (script import)
@@ -126,7 +126,6 @@
       <version>${plantuml.version}</version>
       <scope>system</scope>
       <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/plantuml-1.2024.3.jar</systemPath>
-
     </dependency>
     <dependency>
       <groupId>org.webjars.npm</groupId>
@@ -228,6 +227,21 @@
       <version>${jetty-server.version}</version>
       <scope>test</scope>
     </dependency>
+	<dependency>
+	  <groupId>org.eclipse.elk</groupId>
+	  <artifactId>org.eclipse.elk.core</artifactId>
+	  <version>0.9.1</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.eclipse.elk</groupId>
+	  <artifactId>org.eclipse.elk.alg.layered</artifactId>
+	  <version>0.9.1</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.eclipse.elk</groupId>
+	  <artifactId>org.eclipse.elk.alg.mrtree</artifactId>
+	  <version>0.9.1</version>
+	</dependency>
   </dependencies>
 
   <build>
