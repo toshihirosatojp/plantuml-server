@@ -125,7 +125,7 @@
       <artifactId>plantuml</artifactId>
       <version>${plantuml.version}</version>
       <scope>system</scope>
-      <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/plantuml-1.2024.3.jar</systemPath>
+      <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/plantuml-1.2024.8.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>org.webjars.npm</groupId>
