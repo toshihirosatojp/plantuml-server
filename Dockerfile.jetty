@@ -67,6 +67,7 @@ ENV WEBAPP_PATH=$JETTY_BASE/webapps
 RUN rm -rf $WEBAPP_PATH && \
     mkdir -p $WEBAPP_PATH
 COPY --from=builder /app/target/plantuml.war /plantuml.war
+COPY --from=builder /app/target/dependency/jetty-runner.jar /jetty-runner.jar
 COPY ROOT.jetty.xml $WEBAPP_PATH/ROOT.xml
 
 # Openshift https://docs.openshift.com/container-platform/4.9/openshift_images/create-images.html#images-create-guide-openshift_create-images
