@@ -6,36 +6,15 @@
 >
   <modelVersion>4.0.0</modelVersion>
 
-<<<<<<<< HEAD:pom.jdk8.xml
-  <parent>
-    <groupId>org.sourceforge.plantuml</groupId>
-    <artifactId>plantumlservlet-parent</artifactId>
-    <version>1-SNAPSHOT</version>
-    <relativePath>pom.parent.xml</relativePath>
-  </parent>
-
-  <artifactId>plantumlservlet</artifactId>
-  <packaging>war</packaging>
-========
   <groupId>org.sourceforge.plantuml</groupId>
   <artifactId>plantumlservlet-parent</artifactId>
   <version>1-SNAPSHOT</version>
   <packaging>pom</packaging>
->>>>>>>> 7b0aba14868602076cd0b0e2d0072d9436950840:pom.parent.xml
 
+  <name>PlantUML Servlet</name>
+  <url>https://plantuml.github.io/plantuml-server/index.html</url>
 
   <properties>
-<<<<<<<< HEAD:pom.jdk8.xml
-    <java.version>8</java.version>
-
-    <!-- build plugin management -->
-    <!-- no JDK8 support starting version 10.0.0 -->
-    <checkstyle.version>9.3</checkstyle.version>
-
-    <!-- plugins -->
-    <!-- no JDK8 support starting version 2.5.0 -->
-    <resources-optimizer-maven-plugin.version>2.4.4</resources-optimizer-maven-plugin.version>
-========
     <!-- NOTE: property `java.version` has to be set inside the child pom. -->
     <!-- <java.version>XX</java.version> -->
 
@@ -137,17 +116,15 @@
     <maven-javadoc-plugin.version>3.5.0</maven-javadoc-plugin.version>
     <resources-optimizer-maven-plugin.version>2.5.6</resources-optimizer-maven-plugin.version>
     <fizzed-watcher-maven-plugin.verson>1.0.6</fizzed-watcher-maven-plugin.verson>
->>>>>>>> 7b0aba14868602076cd0b0e2d0072d9436950840:pom.parent.xml
   </properties>
 
   <dependencies>
     <dependency>
-<<<<<<<< HEAD:pom.jdk8.xml
-========
       <groupId>net.sourceforge.plantuml</groupId>
       <artifactId>plantuml</artifactId>
       <version>${plantuml.version}</version>
-      <scope>compile</scope>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/plantuml-1.2026.8.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>org.webjars.npm</groupId>
@@ -156,7 +133,6 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
->>>>>>>> 7b0aba14868602076cd0b0e2d0072d9436950840:pom.parent.xml
       <groupId>jakarta.servlet</groupId>
       <artifactId>jakarta.servlet-api</artifactId>
       <version>${jakarta-servlet.version}</version>
@@ -186,11 +162,6 @@
         </exclusion>
       </exclusions>
     </dependency>
-<<<<<<<< HEAD:pom.jdk8.xml
-
-    <!-- Testing -->
-    <dependency>
-========
     <!-- jlatexmath -->
     <dependency>
       <groupId>org.scilab.forge</groupId>
@@ -268,7 +239,6 @@
       <scope>test</scope>
     </dependency>
     <dependency>
->>>>>>>> 7b0aba14868602076cd0b0e2d0072d9436950840:pom.parent.xml
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
       <version>${jetty-server.version}</version>
@@ -280,24 +250,22 @@
       <version>${jetty.version}</version>
       <scope>test</scope>
     </dependency>
-	<dependency>
-	  <groupId>org.eclipse.elk</groupId>
-	  <artifactId>org.eclipse.elk.core</artifactId>
-	  <version>0.9.1</version>
-	</dependency>
-	<dependency>
-	  <groupId>org.eclipse.elk</groupId>
-	  <artifactId>org.eclipse.elk.alg.layered</artifactId>
-	  <version>0.9.1</version>
-	</dependency>
-	<dependency>
-	  <groupId>org.eclipse.elk</groupId>
-	  <artifactId>org.eclipse.elk.alg.mrtree</artifactId>
-	  <version>0.9.1</version>
-	</dependency>
+    <dependency>
+      <groupId>org.eclipse.elk</groupId>
+      <artifactId>org.eclipse.elk.core</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.elk</groupId>
+      <artifactId>org.eclipse.elk.alg.layered</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.elk</groupId>
+      <artifactId>org.eclipse.elk.alg.mrtree</artifactId>
+      <version>0.9.1</version>
+    </dependency>
   </dependencies>
-<<<<<<<< HEAD:pom.jdk8.xml
-========
 
   <build>
     <finalName>plantuml</finalName>
@@ -724,5 +692,4 @@
       </plugin>
     </plugins>
   </reporting>
->>>>>>>> 7b0aba14868602076cd0b0e2d0072d9436950840:pom.parent.xml
 </project>
