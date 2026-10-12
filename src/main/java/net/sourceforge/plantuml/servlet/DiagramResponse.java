@@ -216,6 +216,7 @@ public class DiagramResponse {
      */
     public void sendDiagram(String uml, int idx) throws IOException {
         response.addHeader("Access-Control-Allow-Origin", "*");
+        response.addHeader("Access-Control-Expose-Headers", "*");
         response.setContentType(getContentType());
 
         if (idx < 0) {
